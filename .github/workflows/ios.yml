@@ -17,11 +17,6 @@ jobs:
       
       - name: Install Dependencies
         run: pod install
-      
-      - name: Set up Xcode
-        uses: actions/setup-xcode@v2
-        with:
-          xcode-version: 14.2
 
       - name: Set Default Scheme
         run: |
