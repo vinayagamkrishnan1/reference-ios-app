@@ -1,0 +1,6 @@
+framework module Pods_referencemsal_referencemsalUITests {
+  umbrella header "Pods-referencemsal-referencemsalUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
