@@ -15,11 +15,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install Bundler
-        run: gem install bundler
+      # - name: Install Bundler
+      #   run: gem install bundler
 
-      - name: Install gems
-        run: bundle install
+      # - name: Install gems
+      #   run: bundle install
       
       - name: Install Dependencies
         run: pod install
