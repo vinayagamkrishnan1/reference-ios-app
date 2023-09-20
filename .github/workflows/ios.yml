@@ -25,13 +25,13 @@ jobs:
             -scheme referencemsal \
             -configuration Release \
             -destination "generic/platform=iOS" \
-            -archivePath build/referencemsal.xcarchive
+            -archivePath referencemsal.xcarchive
 
       - name: Upload IPA
         uses: actions/upload-artifact@v2
         with:
           name: YourApp
-          path: build/YourApp.ipa
+          path: YourApp.ipa
 
       # - name: Set Default Scheme
       #   run: |
