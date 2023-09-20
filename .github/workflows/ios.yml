@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Bundler
-        run: gem intall bundler
+        run: gem install bundler
 
       - name: Install gems
         run: bundle install
