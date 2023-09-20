@@ -19,7 +19,7 @@ jobs:
         run: pod install
       
       - name: Check Xcode version
-        uses: /usr/bin/xcodebuild -version
+        run: /usr/bin/xcodebuild -version
 
       - name: Build IPA
         run: |
