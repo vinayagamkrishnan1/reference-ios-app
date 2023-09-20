@@ -20,8 +20,12 @@ jobs:
 
       - name: Build IPA
         run: |
-          xcodebuild -workspace referencemsal.xcworkspace -scheme "com.eygsl.cbs.referencemsal" -configuration Release clean build CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY="iPhone Distribution: EY GLOBAL SERVICES LIMITED (C5QVF8U483)" PROVISIONING_PROFILE_SPECIFIER="Your Provisioning Profile" -destination generic/platform=iOS -archivePath build/referencemsal.xcarchive
-          xcodebuild -exportArchive -archivePath build/referencemsal.xcarchive -exportOptionsPlist exportOptions.plist -exportPath build
+          xcodebuild \
+            -workspace referencemsal.xcworkspace \
+            -scheme referencemsal \
+            -configuration Release \
+            -destination "generic/platform=iOS" \
+            -archivePath build/referencemsal.xcarchive
 
       - name: Upload IPA
         uses: actions/upload-artifact@v2
